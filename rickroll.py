@@ -3,10 +3,6 @@ from scapy.all import *
 
 list = open("dests.txt").readlines()
 
-#############################
-#MAIN FUNCTIONS##############
-#############################
-
 def ids():
     for x in list:
         packet = IP(dst=x,src="YOUR IP")/TCP(dport=999,sport=1234)/"NEVERGONNAGIVEYOUUP"
