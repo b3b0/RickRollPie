@@ -1,6 +1,4 @@
 import time
-import sys
-import os
 from scapy.all import *
 
 list = open("dests.txt").readlines()
